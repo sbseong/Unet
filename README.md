@@ -8,13 +8,13 @@ The architecture was inspired by [U-Net: Convolutional Networks for Biomedical I
 
 ### Data
 
-The original dataset is from [isbi challenge](http://brainiac2.mit.edu/isbi_challenge/), and I've downloaded it and done the pre-processing.
+The original dataset is from ssc-2, and I've downloaded it and done the pre-processing.
 
-You can find it in folder data/membrane.
+You can find it in folder data/calcium.
 
 ### Data augmentation
 
-The data for training contains 30 512*512 images, which are far not enough to feed a deep learning neural network. I use a module called ImageDataGenerator in keras.preprocessing.image to do data augmentation.
+The data for training contains 126 512*512 images, which are far not enough to feed a deep learning neural network. I use a module called ImageDataGenerator in keras.preprocessing.image to do data augmentation.
 
 See dataPrepare.ipynb and data.py for detail.
 
@@ -50,7 +50,7 @@ This tutorial depends on the following libraries:
 
 Also, this code should be compatible with Python versions 2.7-3.5.
 
-### Run main.py
+### Run main_ca.py
 
 You will see the predicted results of test image in data/membrane/test
 
